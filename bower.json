@@ -1,0 +1,25 @@
+{
+  "name": "ng-at",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sp90/ng-at",
+  "authors": [
+    "Simon Dragsbæk Petersen <dev@nomis.dk>"
+  ],
+  "description": "Angular directive based on at.js, mentions in textarea/contenteditable",
+  "main": "at.js",
+  "keywords": [
+    "mention"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "angular": "~1.4.5"
+  }
+}
