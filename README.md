@@ -1,4 +1,4 @@
-Angular-At-Directive
+ng-at
 ====================
 
 ## Requirements
@@ -12,8 +12,7 @@ Angular-At-Directive
 
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-        <script src="app/scripts/caret.js"></script>
-        <script src="app/scripts/at.js"></script>
+        <script src="app/scripts/at.min.js"></script>
         <script src="app/scripts/app.js"></script>
 
 + Add 'At' to your module's list of dependencies
