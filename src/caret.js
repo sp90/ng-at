@@ -27,7 +27,6 @@ angular.module('ngCaret', [])
           clonedRange.selectNodeContents(element[0]);
           clonedRange.setEnd(range.endContainer, range.endOffset);
           pos = clonedRange.toString().length;
-          clonedRange.detach();
           return pos;
         } else if (document.selection) {
           return this.getOldIEPos(element);
@@ -63,7 +62,6 @@ angular.module('ngCaret', [])
             left: rect.left + rect.width,
             top: rect.top
           };
-          clonedRange.detach();
         } else if (document.selection) {
           this.getOldIEOffset();
         }
@@ -289,7 +287,8 @@ angular.module('ngCaret', [])
     'use strict';
     return {
       getPos: function (element) {
-        if (element.attr('contenteditable') === 'true') {
+        var attr = element.attr('contenteditable');
+        if (typeof attr === 'string') {
           return EditableCaret.getPos(element);
         } else {
           return InputCaret.getPos(element);

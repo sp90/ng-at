@@ -19,7 +19,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.11.1",
-    "angular": "~1.4.5"
+    "angular": "~1.4.5",
+    "jquery": "1.11.1"
+  },
+  "devDependencies": {
+    "angular-ui-router": "ui-router#~0.2.15",
   }
 }

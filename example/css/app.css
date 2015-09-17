@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+	background: #ccc;
+	font-family: sans-serif;
+	font-size: 15px;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 30px auto 0;
+}
+.paper {
+  	padding: 30px;
+	width: 100%;
+	height: auto;
+	border-radius: 2px;
+
+	background: white;
+
+	border-bottom: 2px solid #b2b2b2;
+	border-right: 2px solid #b2b2b2;
+  	margin-bottom: 4px;
+}
+[contenteditable]{
+	border: 1px solid #eee;
+	padding: 20px;
+	transition: border-color 200ms ease;
+}
+[contenteditable]:focus {
+	outline: none;
+	border-color: #ccc;
+}

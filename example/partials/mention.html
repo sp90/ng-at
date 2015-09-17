@@ -1,0 +1,10 @@
+<div contenteditable ng-model="content" ng-trim="false" at-user auto-complete></div>
+<span ng-show="!isAtListHidden" auto-follow="true">
+    <ul class="list-at-user">
+        <li ng-repeat="user in list | filter: query.text | limitTo: 5"
+            ng-click="autoComplete(user)">
+            <img ng-src="{{ user.image }}" class="avatar pull-left" width="50" height="50">
+            <span>{{ user.username }}</span>
+        </li>
+    </ul>
+</span>
